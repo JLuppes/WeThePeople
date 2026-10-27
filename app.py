@@ -12,6 +12,9 @@ def home():
 def pollPage():
 
     if request.method == "POST":
-        return render_template('pollSuccess.html')
+
+        name = request.form.get('name')
+
+        return render_template('pollSuccess.html', name=name)
 
     return render_template('poll.html')

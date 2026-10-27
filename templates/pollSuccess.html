@@ -1,9 +1,7 @@
 {% extends 'base.html' %}
+{%block title%} {{super()}}/Success {%endblock title%}
 {% block content %}
 <h2>Poll Submitted Successfully!</h2>
 <h3>Your Results:</h3>
-
 <p><strong>Name:</strong> {{name}}</p>
-
-
 {% endblock content %}

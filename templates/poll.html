@@ -1,20 +1,16 @@
 {% extends 'base.html' %}
 
+{%block title%}
+{{super()}}/Poll
+{%endblock title%}
 
 {% block content %}
 <h2>Poll Page</h2>
-
-
-
 <form method="POST">
-
     <div>
         <label for="name">Name: </label>
         <input type="text" id="name" name="name">
     </div>
-
     <button type="submit">Submit Poll</button>
-
 </form>
-
-{% endblock content   %}
+{% endblock content %}

@@ -6,9 +6,23 @@
     <title>We The People</title>
   </head>
   <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="{{url_for('home')}}">
+            <p>Home</p>
+          </a>
+        </li>
+        <li>
+          <a href="{{url_for('pollPage')}}">
+            <p>Poll</p>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
     <h1>We The People</h1>
 
-    {% block content %}
-    {% endblock content %}
+    {% block content %} {% endblock content %}
   </body>
 </html>
